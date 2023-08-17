@@ -1,0 +1,34 @@
+//C++ code
+//RGB LED
+int red=13,
+    blue=12,
+    green=11;
+void setup()
+{
+   pinMode(red,OUTPUT);
+   pinMode(blue,OUTPUT);
+   pinMode(green,OUTPUT);
+}
+
+void loop()
+{
+   rgbBlink();
+}
+void rgbBlink()
+{
+   digitalWrite(blue,HIGH);
+   delay(2000);
+   digitalWrite(blue,LOW);
+   digitalWrite(red,HIGH);
+   delay(2000);
+   digitalWrite(red,LOW);
+   digitalWrite(green,HIGH);
+   delay(2000);
+   digitalWrite(green,LOW);
+   digitalWrite(green,HIGH);
+   digitalWrite(red,HIGH);
+   delay(2000);
+   digitalWrite(green,LOW);
+   digitalWrite(red,LOW);
+   
+}    
