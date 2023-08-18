@@ -1,0 +1,14 @@
+// C++ code
+//Motor Control
+int p=11,n=10;
+void setup()
+{
+    pinMode(p,OUTPUT);
+    pinMode(n,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(p,HIGH);
+  digitalWrite(n,LOW);
+} 
